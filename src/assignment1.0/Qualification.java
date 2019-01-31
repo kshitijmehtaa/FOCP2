@@ -1,5 +1,3 @@
-package assignment;
-import assignment.*;
 //class for qualification information
 public class Qualification
 {
@@ -10,17 +8,17 @@ public class Qualification
 
   public Qualification(Qualification a)
     {
-     this.qualName = new String(a.qualName);
-     this.university = new String(a.university);
-     this.institute = new String(a.institute);
+     this.qualName = a.qualName;
+     this.university = a.university;
+     this.institute = a.institute;
      this.cgpa = a.cgpa;
     }
 
   public Qualification(String a, String b, String c, float d )
     {
-     this.qualName = new String(a);
-     this.university = new String(b);
-     this.institute = new String(c);
+     this.qualName = a;
+     this.university = b;
+     this.institute = c;
      this.cgpa = d;
     }
 
