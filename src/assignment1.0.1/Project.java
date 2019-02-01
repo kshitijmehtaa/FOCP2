@@ -19,7 +19,7 @@ public class Project
         
     }
 
-  public Project(String a, Date b, Date c ,String d, String[] e)
+  public void Projectset(String a, Date b, Date c ,String d, String[] e)
     {
         this.name = a;
         this.endDate = b;
@@ -28,6 +28,11 @@ public class Project
         for(int i=0;i<responsibilities.length;i++)
           this.responsibilities[i] = e[i]; 
         
+    }
+
+    public Project()
+    {
+       System.out.println("p constructor called");
     }
    
 

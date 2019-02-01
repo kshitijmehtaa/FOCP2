@@ -11,6 +11,11 @@ public class Student
   String eMail;
   String contactNo;
 
+  public Student()
+  {
+     System.out.println("constructor s");
+  }
+
   public Student(String a, String b, Address c, Date d, String[] e, Qualification[] f, Project[] g, String h, String i) //constructor with Project
     {
         this.firstName = a;
@@ -20,9 +25,16 @@ public class Student
         for(int j=0;j<e.length;j++)
           this.skills[j] = e[j];
         for(int k=0;k<f.length;k++)
+        {
+          this.qual[k] = new Qualification();
           this.qual[k] = f[k];
+
+        }
         for(int l=0;l<g.length;l++)
+        {
+          this.projects[l] = new Project();
           this.projects[l] = g[l];
+        }
         this.eMail = new String(h); 
         this.contactNo = new String(i);
     }
@@ -51,9 +63,9 @@ public class Student
         for(int i=0;i<skills.length;i++)
           System.out.print("\n\t\t" + skills[i]);
         for(int o=0;o<qual.length;o++)
-        qual.Display1();
+        //qual.Display1();
         for(int h=0;h<projects.length;h++)
-        projects.Display2();
+        //projects.Display2();
         System.out.print("\n Email : " + this.eMail);
         System.out.print("\n Contact No. : " + this.contactNo);
    }

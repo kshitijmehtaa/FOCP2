@@ -14,12 +14,16 @@ public class Qualification
      this.cgpa = a.cgpa;
     }
 
-  public Qualification(String a, String b, String c, float d )
+  public void Qualificationset(String a, String b, String c, float d )
     {
      this.qualName = a;
      this.university = b;
      this.institute = c;
      this.cgpa = d;
+    }
+    public Qualification()
+    {
+       System.out.println("q constructor called");
     }
 
    public void Display()
