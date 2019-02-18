@@ -3,8 +3,9 @@ import java.util.*;
 class FileDemoWrite {
    public static void main(String[] args) {
       File f = null;
+      int n=1;
       try {
-            f = new File(“file.txt");
+            f = new File("file"+n+".txt");
             FileWriter fout = new FileWriter(f);
             BufferedWriter bout= new BufferedWriter(fout);
 	     Scanner sc = new Scanner(System.in);
